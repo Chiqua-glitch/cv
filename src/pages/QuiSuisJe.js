@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 
-const Contact = () => {
+const QuiSuisJe = () => {
   return (
     <div>
       <header>
@@ -11,4 +11,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default QuiSuisJe;
