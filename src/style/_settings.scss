@@ -14,3 +14,53 @@
 
 $primary-font: regular;
 $secondary-font: bold;
+
+$white-color: #FCFCFC;
+$orange-color: #F8B901;
+$gradient-color: linear-gradient(90deg, rgba(30,30,31,1) 0%, rgba(248,185,1,0.5) 100%);
+$font-color: rgba(214, 214, 214, 0.7);
+$background-color-portfolio: rgba(42, 42, 43, 0.7);
+$primary-bg: #2A2A2B;
+$secondary-bg: #202021;
+
+$primary-border-radius: 30px;
+$secondary-border-radius: 5px;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $white-color;
+    font-family: $primary-font;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#principal-page {
+    background-color: $secondary-bg;
+    border-radius: $primary-border-radius;
+    height: 80vh;
+    width: 900px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
