@@ -3,8 +3,9 @@ import Navigation from "../components/Navigation";
 
 const QuiSuisJe = () => {
   return (
-    <div>
+    <div id="principal-page" className="howIAm-page">
       <header>
+        <h1>Qui suis-je ?</h1>
         <Navigation />
       </header>
     </div>

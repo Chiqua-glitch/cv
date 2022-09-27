@@ -9,16 +9,15 @@ class Navigation extends Component {
           <li>
             <NavLink
               to="/qui-suis-je"
-              end
-              className={(nav) => (nav.isActive ? "link-active" : "")}
+              className={(nav) => (nav.isActive ? "active-link" : "")}
             >
               Qui suis-je ?
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/"
-              className={(nav) => (nav.isActive ? "link-active" : "")}
+              to="/" end
+              className={(nav) => (nav.isActive ? "active-link" : "")}
             >
               Résumé
             </NavLink>
@@ -26,7 +25,7 @@ class Navigation extends Component {
           <li>
             <NavLink
               to="/portfolio"
-              className={(nav) => (nav.isActive ? "link-active" : "")}
+              className={(nav) => (nav.isActive ? "active-linke" : "")}
             >
               Portfolio
             </NavLink>
@@ -34,7 +33,7 @@ class Navigation extends Component {
           <li className="link-mobile">
             <NavLink
               to="/contact"
-              className={(nav) => (nav.isActive ? "link-active" : "")}
+              className={(nav) => (nav.isActive ? "active-link" : "")}
             >
               Contact
             </NavLink>
