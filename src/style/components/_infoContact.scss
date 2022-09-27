@@ -1,0 +1,76 @@
+aside {
+  @include bigFather;
+  margin-right: 3rem;
+  width: 450px;
+  padding: 3rem;
+  height: 70vh;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
+  img.myPicture {
+    width: 18rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+
+  p.myName {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+
+    &:after {
+      margin: 3rem 0;
+      content: "";
+      display: inline-block;
+      width: 60%;
+      padding: 0 2rem;
+      background-color: rgba(214, 214, 214, 0.7);
+      height: 1px;
+    }
+  }
+
+  .email,
+  .phone,
+  .adress {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .phone,
+  .adress {
+    margin-top: 3rem;
+  }
+
+  :where(.email, .phone, .adress) img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 7px;
+    padding: 1rem;
+    background: $gradient-color;
+    margin-right: 1rem;
+    border: 1px solid $orange-color;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  :where(.email, .phone, .adress) p:first-of-type {
+    color: $font-color;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+    height: 8rem;
+    align-items: flex-end;
+  }
+
+  .copy {
+    cursor: pointer;
+  }
+}
