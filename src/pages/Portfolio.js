@@ -8,8 +8,10 @@ const Portfolio = () => {
       <InfoContact />
       <div id="principal-page" className="portfolio-page">
         <header>
-          <h1>portfolio</h1>
-          <Navigation />
+          <div className="full-nav">
+            <h1>portfolio</h1>
+            <Navigation />
+          </div>
         </header>
         <main></main>
       </div>

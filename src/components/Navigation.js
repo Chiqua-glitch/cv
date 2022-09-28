@@ -1,10 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
-class Navigation extends Component {
-  render() {
-    return (
-      <nav>
+const Navigation = () => {
+  const [anim, setAnim] = useState(false);
+
+  const handlerClick = () => {
+    setAnim(!anim);
+  };
+  return (
+    <div>
+      <div onClick={handlerClick}>
+        <span className={`menu-burger ${anim ? "anim-class" : ""}`}></span>
+      </div>
+      <nav className={anim ? "nav-active" : ""}>
         <ul>
           <li>
             <NavLink
@@ -17,7 +26,7 @@ class Navigation extends Component {
           <li>
             <NavLink
               to="/portfolio"
-              className={(nav) => (nav.isActive ? "active-linke" : "")}
+              className={(nav) => (nav.isActive ? "active-link" : "")}
             >
               Portfolio
             </NavLink>
@@ -41,8 +50,8 @@ class Navigation extends Component {
           </li>
         </ul>
       </nav>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Navigation;
