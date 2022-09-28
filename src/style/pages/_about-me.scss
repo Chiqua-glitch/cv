@@ -1,0 +1,38 @@
+.aboutMe-page#principal-page {
+  height: unset;
+  main {
+    .moreInfoAboutMe {
+      width: 750px;
+    }
+
+    .group-passion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .content-passion {
+        box-shadow: $box-shadow;
+        display: flex;
+        align-items: center;
+        margin: 3rem 0;
+        background: $gradient-info;
+        width: max-content;
+        padding: 1.5rem;
+        border-radius: $secondary-border-radius;
+        @include borderGold;
+        div {
+          margin-left: 1rem;
+          h3,
+          p {
+            margin: 0;
+          }
+          h3 {
+            margin-bottom: 5px;
+          }
+        }
+        img {
+          width: 4.5rem;
+        }
+      }
+    }
+  }
+}

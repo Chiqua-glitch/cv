@@ -16,18 +16,19 @@ class Navigation extends Component {
           </li>
           <li>
             <NavLink
-              to="/" end
-              className={(nav) => (nav.isActive ? "active-link" : "")}
-            >
-              Résumé
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/portfolio"
               className={(nav) => (nav.isActive ? "active-linke" : "")}
             >
               Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/"
+              end
+              className={(nav) => (nav.isActive ? "active-link" : "")}
+            >
+              Résumé
             </NavLink>
           </li>
           <li className="link-mobile">

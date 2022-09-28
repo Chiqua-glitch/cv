@@ -22,6 +22,7 @@ $gradient-color: linear-gradient(
   rgba(248, 185, 1, 0.5) 0%,
   rgba(30, 30, 31, 1) 60%
 );
+$gradient-info: linear-gradient(90deg, rgba(248, 185, 1, 0.2) 0%, rgb(30, 30, 31) 80%);
 $font-color: rgba(214, 214, 214, 0.7);
 $background-color-portfolio: rgba(42, 42, 43, 0.7);
 $primary-bg: #2a2a2b;
@@ -30,12 +31,22 @@ $secondary-bg: #202021;
 $primary-border-radius: 30px;
 $secondary-border-radius: 5px;
 
+$border-gold: 1px solid $orange-color;
+
+$box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, .5);
+
 //mixin
 
 @mixin bigFather {
   background-color: $secondary-bg;
   border-radius: $primary-border-radius;
   height: 80vh;
+}
+
+@mixin borderGold {
+  border: $border-gold;
+  border-bottom: 0;
+  border-right: 0;
 }
 
 * {
@@ -69,7 +80,7 @@ img {
 
 #principal-page {
   @include bigFather;
-  width: 900px;
+  width: clamp(50vw, 70vw, 900px);
 }
 
 .group-aside-page {
@@ -87,4 +98,29 @@ img {
   h1 {
     text-transform: capitalize;
   }
+}
+
+h1, h2 {
+  font-size: 2.2rem;
+  position: relative;
+  width: max-content;
+  padding: 3rem 0 1rem 0;
+  margin: 0 0 0 5rem;
+  &:after {
+    content: "";
+    display: inline-block;
+    background-color: $orange-color;
+    border-radius: $secondary-border-radius;
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+h2 {
+  margin: 0;
+  padding-top: 0;
+  font-size: 2rem;
 }
