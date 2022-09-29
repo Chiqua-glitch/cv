@@ -5,12 +5,14 @@ import { dataPassion } from "../data/dataAboutMe";
 
 const QuiSuisJe = () => {
   return (
-    <div className="group-aside-page">
+    <div className="group-about-me-page selectAllPage">
       <InfoContact />
       <div id="principal-page" className="aboutMe-page">
         <header>
-          <h1>Qui suis-je ?</h1>
-          <Navigation />
+          <div className="full-nav">
+            <h1>Qui suis-je ?</h1>
+            <Navigation />
+          </div>
         </header>
         <main>
           <p className="moreInfoAboutMe">
