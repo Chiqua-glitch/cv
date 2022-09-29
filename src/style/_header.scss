@@ -5,16 +5,15 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+  span.menu-burger {
+    display: none;
+  }
   nav {
     background-color: $primary-bg;
-    border-radius: 0 $primary-border-radius 0 $primary-border-radius;
+    border-radius: $primary-border-radius 0 0 $primary-border-radius;
     width: 400px;
     height: 75px;
     margin: 0 0 0 auto;
-
-    span.menu-burger {
-      display: none;
-    }
     ul {
       align-items: center;
       height: 100%;
@@ -22,15 +21,14 @@ header {
       padding: 0 2rem;
       display: flex;
 
-      .link-mobile {
-        display: none;
-      }
       li {
+        right: 100rem;
+
         a {
           color: $font-color;
           transition: 0.25s;
           &:hover {
-            color: $orange-color;
+            color: unset;
           }
         }
         .active-link {
@@ -41,8 +39,11 @@ header {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   header {
+    span.menu-burger {
+      display: inline-block;
+    }
     margin: 3rem 5rem;
     h1 {
       margin: 0;
@@ -51,21 +52,21 @@ header {
     nav {
       transition: 1s;
       position: absolute;
-      top: 9rem;
+      top: 7rem;
       right: -5rem;
-      width: 175px;
-
+      width: 0;
       height: max-content;
 
       ul {
         flex-direction: column;
-        .link-mobile {
-          display: block;
-        }
+
         li {
+          opacity: 0;
           margin: 1.5rem;
           width: 175px;
           text-align: center;
+          transition: .3s;
+          color: transparent;
         }
       }
     }
@@ -73,49 +74,9 @@ header {
       width: 100%;
       div {
         width: 4rem;
-        padding-top: 2rem;
         position: relative;
         cursor: pointer;
         height: 4rem;
-        span.menu-burger {
-          @include menuBurger;
-          height: 3px;
-          top: 2rem;
-          position: absolute;
-          &:before {
-            @include menuBurger;
-            height: 3px;
-            position: absolute;
-            bottom: 0;
-            margin: 9px 0;
-          }
-          &:after {
-            @include menuBurger;
-            height: 8rem;
-            background-color: transparent;
-            position: absolute;
-            border-top: 4px solid $orange-color;
-            bottom: 0;
-            margin: 26px 0;
-            top: -4.5rem;
-            left: 0rem;
-          }
-        }
-      }
-      .anim-class.menu-burger {
-        width: 5rem;
-        transform: rotate(400deg);
-        &:after {
-          width: 9rem;
-          border-radius: 50px;
-          left: -2rem;
-          top: -6.5rem;
-          transform: rotate(-40deg);
-        }
-        &::before {
-          width: 5rem;
-          transform: rotate(100deg) translateX(10px);
-        }
       }
     }
   }
