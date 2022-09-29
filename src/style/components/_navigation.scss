@@ -1,7 +1,7 @@
 span.menu-burger {
   @include menuBurger;
   height: 3px;
-  top: 2rem;
+  top: 2.2rem;
   position: absolute;
   &:before {
     @include menuBurger;
@@ -119,7 +119,7 @@ header {
 
 @media screen and (max-width: 1400px) {
   header {
-        margin: 3rem;
+    margin: 3rem 5rem;
     span.menu-burger {
       display: inline-block;
     }

@@ -4,7 +4,7 @@ import InfoContact from "../components/InfoContact";
 
 const Contact = () => {
   return (
-    <div className="group-contact-page selectAllPage">
+    <div className="selectAllPage">
       <InfoContact />
       <div id="principal-page" className="contact-page">
         <header>
