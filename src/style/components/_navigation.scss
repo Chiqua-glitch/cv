@@ -24,18 +24,18 @@ span.menu-burger {
 }
 
 .anim-class.menu-burger {
-  width: 5rem;
+  width: 3.5rem;
   transform: rotate(400deg);
   &:after {
-    width: 9rem;
+    width: 8rem;
     border-radius: 50px;
-    left: -2rem;
+    left: -2.2rem;
     top: -6.5rem;
     transform: rotate(-40deg);
   }
   &::before {
-    width: 5rem;
-    transform: rotate(100deg) translateX(10px);
+    width: 3.5rem;
+    transform: rotate(100deg) translateX(10px) translateY(0px);
   }
 }
 
@@ -73,5 +73,91 @@ span.menu-burger {
 
   100% {
     color: $font-color;
+  }
+}
+
+header {
+  .full-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  span.menu-burger {
+    display: none;
+  }
+  nav {
+    background-color: $primary-bg;
+    border-radius: $primary-border-radius 0 0 $primary-border-radius;
+    width: 400px;
+    height: 75px;
+    margin: 0 0 0 auto;
+    ul {
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      padding: 0 2rem;
+      display: flex;
+
+      li {
+        right: 100rem;
+
+        a {
+          color: $font-color;
+          transition: 0.25s;
+          &:hover {
+            color: $orange-color;
+          }
+        }
+        .active-link {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    span.menu-burger {
+      display: inline-block;
+    }
+    margin: 3rem 5rem;
+    h1 {
+      margin: 0;
+      padding: 0 0 1rem 0;
+    }
+    nav {
+      transition: 1s;
+      position: absolute;
+      top: 7rem;
+      right: -5rem;
+      width: 0;
+      height: max-content;
+
+      ul {
+        flex-direction: column;
+
+        li {
+          position: relative;
+          right: -10rem;
+          opacity: 0;
+          margin: 1.5rem;
+          width: 175px;
+          text-align: center;
+          transition: 1s;
+          color: transparent;
+        }
+      }
+    }
+    > div {
+      width: 100%;
+      div {
+        width: 4rem;
+        position: relative;
+        cursor: pointer;
+        height: 4rem;
+      }
+    }
   }
 }

@@ -27,7 +27,7 @@ const InfoContact = () => {
         {infoContactNetwork.map((e) => {
           return (
             <a key={e.id} href={e.link} target="_blank" rel="noreferrer">
-              <img src={e.srcNetwork} alt="" />;
+              <img src={e.srcNetwork} alt="" />
             </a>
           );
         })}

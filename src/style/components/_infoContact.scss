@@ -4,9 +4,6 @@ aside {
   width: 450px;
   padding: 3rem;
   height: 70vh;
-  @media screen and (max-width: 1200px) {
-    display: none;
-  }
 
   img.myPicture {
     width: 18rem;
@@ -71,5 +68,36 @@ aside {
 
   .copy {
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .selectAllPage {
+    flex-direction: column-reverse;
+    aside {
+      margin-top: 0;
+      height: 75px;
+      width: clamp(50vw, 70vw, 900px);
+      img.myPicture,
+      p.myName,
+      div img,
+      div div p:first-of-type, .icons {
+        display: none;
+      }
+      div, div p {
+        margin: 0;
+      }
+      >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    display: none;
   }
 }
