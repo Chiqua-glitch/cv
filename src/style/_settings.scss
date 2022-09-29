@@ -96,6 +96,7 @@ img {
 #principal-page {
   @include bigFather;
   width: clamp(50vw, 70vw, 900px);
+  overflow: hidden;
 }
 
 .selectAllPage {

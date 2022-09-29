@@ -28,7 +28,7 @@ header {
           color: $font-color;
           transition: 0.25s;
           &:hover {
-            color: unset;
+            color: $orange-color;
           }
         }
         .active-link {
@@ -61,11 +61,13 @@ header {
         flex-direction: column;
 
         li {
+          position: relative;
+          right: -10rem;
           opacity: 0;
           margin: 1.5rem;
           width: 175px;
           text-align: center;
-          transition: .3s;
+          transition: 1s;
           color: transparent;
         }
       }
