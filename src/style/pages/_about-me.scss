@@ -5,9 +5,6 @@
     }
 
     .group-passion {
-      @media screen and (max-width: 1000px) {
-        justify-content: center;
-      }
       div {
         @media screen and (max-width: 1400px) {
           margin: 0;
@@ -41,6 +38,19 @@
           width: 4.5rem;
         }
       }
+    }
+    @media screen and (max-width: 1400px) {
+      .moreInfoAboutMe {
+        width: 100%;
+      }
+
+      
+    }
+    @media screen and (max-width: 1000px) {
+      .group-passion {
+        justify-content: center;
+      }
+      
     }
   }
 }

@@ -44,8 +44,6 @@ $box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
 @mixin bigFather {
   background-color: $secondary-bg;
   border-radius: $primary-border-radius;
-  height: max-content;
-  margin: 3rem 0;
 }
 
 @mixin borderGold {
@@ -76,7 +74,6 @@ body {
   color: $white-color;
   font-family: $primary-font;
   font-size: 1.5rem;
-  overflow: hidden;
 }
 
 ul {
@@ -97,6 +94,12 @@ img {
   @include bigFather;
   width: clamp(50vw, 70vw, 900px);
   overflow: hidden;
+  @media screen and (max-width: 1400px) {
+    margin-bottom: 3rem;
+  }
+  @media screen and (max-width: 1000px) {
+    margin: 0;
+  }
 }
 
 .selectAllPage {
@@ -106,38 +109,44 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.portfolio-page,
-.contact-page,
-.resume-page {
-  h1 {
-    text-transform: capitalize;
+  @media screen and (max-width: 1400px) {
+    top: 0;
+    transform: translate(-50%, 0);
   }
-}
-
-h1,
-h2 {
-  font-size: 2.2rem;
-  position: relative;
-  width: max-content;
-  padding: 3rem 0 1rem 0;
-  margin: 0 5rem;
-  &:after {
-    content: "";
-    display: inline-block;
-    background-color: $orange-color;
-    border-radius: $secondary-border-radius;
-    width: 60%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  header h1 {
+    margin-top: 3rem;
+    @media screen and (max-width: 1400px) {margin: 0;}
   }
-}
+  .portfolio-page,
+  .contact-page,
+  .resume-page {
+    h1 {
+      text-transform: capitalize;
+    }
+  }
+  h1,
+  h2 {
+    font-size: 2.2rem;
+    position: relative;
+    width: max-content;
+    padding-bottom: 1rem;
+    margin: 0 5rem;
+    &:after {
+      content: "";
+      display: inline-block;
+      background-color: $orange-color;
+      border-radius: $secondary-border-radius;
+      width: 60%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
-h2 {
-  margin: 0;
-  padding-top: 0;
-  font-size: 2rem;
+  h2 {
+    margin: 0;
+    padding-top: 0;
+    font-size: 2rem;
+  }
 }

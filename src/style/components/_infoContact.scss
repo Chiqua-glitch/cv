@@ -76,21 +76,37 @@ aside {
     flex-direction: column-reverse;
     aside {
       margin-top: 0;
-      height: 75px;
+      height: max-content;
       width: clamp(50vw, 70vw, 900px);
       img.myPicture,
       p.myName,
       div img,
-      div div p:first-of-type, .icons {
+      div div p:first-of-type,
+      .icons {
         display: none;
       }
-      div, div p {
+      div,
+      div p {
         margin: 0;
       }
-      >div {
+      > div {
         display: flex;
         align-items: center;
         justify-content: space-between;
+      }
+      div {
+        div {
+          div {
+            padding: 2rem;
+            background: $gradient-color;
+            border-radius: $secondary-border-radius;
+            @include borderGold;
+            width: clamp(100%, 5rem, 5rem);
+            p {
+              font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+            }
+          }
+        }
       }
     }
   }

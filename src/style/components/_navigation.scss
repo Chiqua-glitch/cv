@@ -81,7 +81,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   span.menu-burger {
     display: none;
@@ -119,10 +119,10 @@ header {
 
 @media screen and (max-width: 1400px) {
   header {
+        margin: 3rem;
     span.menu-burger {
       display: inline-block;
     }
-    margin: 3rem 5rem;
     h1 {
       margin: 0;
       padding: 0 0 1rem 0;
