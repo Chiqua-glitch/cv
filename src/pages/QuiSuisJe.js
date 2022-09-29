@@ -29,7 +29,7 @@ const QuiSuisJe = () => {
           <div className="group-passion">
             {dataPassion.map((e) => {
               return (
-                <div key={e.title} className="content-passion">
+                <div key={e.id} className="content-passion">
                   <img src={e.icon} alt="" />
                   <div>
                     <h3>{e.title}</h3>
