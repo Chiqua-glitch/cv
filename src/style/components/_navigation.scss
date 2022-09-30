@@ -54,6 +54,10 @@ span.menu-burger {
         animation: animBurger 1s;
       }
     }
+    .link-mobile {
+      display: none;
+      @media screen and (max-width: 1000px) {display: block;}
+    }
   }
 }
 @keyframes animBurger {

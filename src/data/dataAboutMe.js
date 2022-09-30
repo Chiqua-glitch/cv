@@ -29,4 +29,16 @@ export const dataPassion = [
         text: "Lorem ipsum dolor sit amet",
         icon: "img/icons/music.png"
     },
+    {
+        id: 6,
+        title: "La musique",
+        text: "Lorem ipsum dolor sit amet",
+        icon: "img/icons/music.png"
+    },
+    {
+        id: 7,
+        title: "La musique",
+        text: "Lorem ipsum dolor sit amet",
+        icon: "img/icons/music.png"
+    },
 ];
