@@ -1,33 +1,9 @@
 aside {
   @include bigFather;
-  margin-right: 3rem;
+  margin-right: $margin-primary;
   width: 450px;
-  padding: 3rem;
+  padding: $margin-primary;
   height: max-content;
-
-  img.myPicture {
-    width: 18rem;
-    display: block;
-    margin: 0 auto;
-    border-radius: 30px;
-  }
-
-  p.myName {
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 0;
-
-    &:after {
-      margin: 3rem 0;
-      content: "";
-      display: inline-block;
-      width: 60%;
-      padding: 0 2rem;
-      background-color: rgba(214, 214, 214, 0.7);
-      height: 1px;
-    }
-  }
 
   .email,
   .phone,
@@ -39,7 +15,7 @@ aside {
 
   .phone,
   .adress {
-    margin-top: 3rem;
+    margin-top: $margin-primary;
   }
 
   :where(.email, .phone, .adress) img {
@@ -98,7 +74,6 @@ aside {
         div {
           div {
             padding: 2rem;
-            background: $gradient-color;
             border-radius: $secondary-border-radius;
             @include borderGold;
             width: clamp(100%, 5rem, 5rem);

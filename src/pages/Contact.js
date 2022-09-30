@@ -1,6 +1,8 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import InfoContact from "../components/InfoContact";
+import CopyToClipboard from "react-copy-to-clipboard";
+import { infoContactDate } from "../data/dataContact";
 
 const Contact = () => {
   return (
@@ -13,7 +15,20 @@ const Contact = () => {
             <Navigation />
           </div>
         </header>
-        <main></main>
+        <main>
+          <img src="img/rose.png" className="myPicture" alt="" />
+          <p className="myName">quentin chéron</p>
+          {infoContactDate.map((e) => {
+            return (
+              <div key={e.type}>
+                <p className={e.type}>{e.type} :</p>
+                <CopyToClipboard text={e.content}>
+                  <p>{e.content}</p>
+                </CopyToClipboard>
+              </div>
+            );
+          })}
+        </main>
       </div>
     </div>
   );

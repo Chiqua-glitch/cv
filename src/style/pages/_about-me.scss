@@ -17,12 +17,12 @@
         box-shadow: $box-shadow;
         display: flex;
         align-items: center;
-        margin: 3rem 0;
         background: $gradient-info;
         width: max-content;
         padding: 1.5rem;
         border-radius: $secondary-border-radius;
         @include borderGold;
+        margin: $margin-primary 0 0 0;
         div {
           margin-left: 1rem;
           h3,

@@ -123,7 +123,7 @@ header {
 
 @media screen and (max-width: 1400px) {
   header {
-    margin: 3rem 5rem;
+    margin: $margin-primary 5rem;
     span.menu-burger {
       display: inline-block;
     }

@@ -13,7 +13,6 @@ const Portfolio = () => {
             <Navigation />
           </div>
         </header>
-        <main></main>
       </div>
     </div>
   );

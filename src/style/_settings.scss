@@ -39,6 +39,8 @@ $border-gold: 1px solid $orange-color;
 
 $box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
 
+$margin-primary: 3rem;
+
 //mixin
 
 @mixin bigFather {
@@ -50,6 +52,8 @@ $box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.5);
   border: $border-gold;
   border-bottom: 0;
   border-right: 0;
+  background: $gradient-info;
+  border-radius: $secondary-border-radius;
 }
 
 @mixin menuBurger {
@@ -94,8 +98,9 @@ img {
   @include bigFather;
   width: clamp(50vw, 70vw, 900px);
   overflow: hidden;
+  padding-bottom: 3rem;
   @media screen and (max-width: 1400px) {
-    margin-bottom: 3rem;
+    margin-bottom: $margin-primary;
   }
   @media screen and (max-width: 1000px) {
     margin: 0;
@@ -114,7 +119,7 @@ img {
     transform: translate(-50%, 0);
   }
   header h1 {
-    margin-top: 3rem;
+    margin-top: $margin-primary;
     @media screen and (max-width: 1400px) {margin: 0;}
   }
   .portfolio-page,
@@ -150,3 +155,4 @@ img {
     font-size: 2rem;
   }
 }
+
