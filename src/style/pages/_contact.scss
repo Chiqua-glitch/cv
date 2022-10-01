@@ -35,6 +35,9 @@ p.myName {
       }
       p {
         margin: 0;
+        &:last-of-type {
+          cursor: pointer;
+        }
       }
       .email,
       .phone,

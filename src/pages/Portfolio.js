@@ -1,8 +1,10 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import InfoContact from "../components/InfoContact";
+import AllCard from "../components/AllCard";
 
 const Portfolio = () => {
+
   return (
     <div className="selectAllPage">
       <InfoContact />
@@ -13,6 +15,10 @@ const Portfolio = () => {
             <Navigation />
           </div>
         </header>
+        <main>
+          <h2>Quels sont les projets que j’ai réalisés ?</h2>
+          {<AllCard />}
+        </main>
       </div>
     </div>
   );

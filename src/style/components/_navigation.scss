@@ -39,27 +39,49 @@ span.menu-burger {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .nav-active {
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 50%);
+    width: 175px;
+    ul {
+      li:not(li:last-of-type) {
+        opacity: 1;
+        display: block;
+        transition: 1s;
+        right: 0;
+        a {
+          animation: anim2Burger 1s;
+        }
+        .active-link {
+          animation: animBurger 1s;
+        }
+      }
+    }
+  }
+}
+
+.link-mobile {
+  display: none;
+  @media screen and (max-width: 1000px) {display: block;}
+}
+
 .nav-active {
-  width: 175px;
-  ul {
-    li {
+  .link-mobile {
+    @media screen and (max-width: 1000px) {
       opacity: 1;
       display: block;
       transition: 1s;
       right: 0;
-      a {
-        animation: anim2Burger 1s;
-      }
-      .active-link {
-        animation: animBurger 1s;
-      }
-    }
-    .link-mobile {
-      display: none;
-      @media screen and (max-width: 1000px) {display: block;}
     }
   }
 }
+
+.full-nav {
+  nav {
+    z-index: 2;
+  }
+}
+
 @keyframes animBurger {
   0% {
     color: unset;
