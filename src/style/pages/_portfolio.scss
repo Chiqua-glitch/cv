@@ -7,8 +7,12 @@
         justify-content: space-between;
         flex-wrap: wrap;
         div {
+          margin: 1rem 1rem;
           align-items: flex-start;
           display: flex;
+          label {
+            font-size: 1.8rem;
+          }
           input[type="radio"] {
             margin-left: 1rem;
             outline: none;
@@ -38,6 +42,7 @@
       }
       button,
       a {
+        cursor: pointer;
         text-transform: capitalize;
         display: block;
         margin: 0 auto;
@@ -56,21 +61,20 @@
     }
 
     .allCard {
+      position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       div:not(.icons) {
         background-color: $primary-bg;
         border-radius: $secondary-border-radius;
-        width: 15rem;
-
+        width: 20rem;
         text-align: center;
-        margin-top: 3rem;
+        margin: 3rem 1rem;
         .icons {
           display: flex;
           justify-content: center;
           img {
-            width: 1.5rem;
             + img {
               margin-left: 5px;
             }
@@ -103,9 +107,6 @@
         }
         h3 {
           margin-top: 0 !important;
-        }
-        p {
-          font-size: 1.3rem;
         }
       }
     }

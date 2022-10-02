@@ -12,7 +12,7 @@ span.menu-burger {
   }
   &:after {
     @include menuBurger;
-    height: 8rem;
+    height: 0;
     background-color: transparent;
     position: absolute;
     border-top: 4px solid $orange-color;
@@ -27,6 +27,7 @@ span.menu-burger {
   width: 3.5rem;
   transform: rotate(400deg);
   &:after {
+    height: 8rem;
     width: 8rem;
     border-radius: 50px;
     left: -2.2rem;
@@ -76,12 +77,6 @@ span.menu-burger {
   }
 }
 
-.full-nav {
-  nav {
-    z-index: 2;
-  }
-}
-
 @keyframes animBurger {
   0% {
     color: unset;
@@ -104,6 +99,7 @@ span.menu-burger {
 
 header {
   .full-nav {
+    z-index: 2;
     display: flex;
     width: 100%;
     justify-content: space-between;

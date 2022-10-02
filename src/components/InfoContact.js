@@ -11,7 +11,7 @@ const InfoContact = () => {
         <p className="myName">quentin chéron</p>
         {infoContactDate.map((e) => {
           return (
-            <div className={e.type} key={e.type}>
+            <div className={e.id} key={e.type}>
               <img src={e.iconSrc} alt="" />
               <div>
                 <p>{e.type}</p>

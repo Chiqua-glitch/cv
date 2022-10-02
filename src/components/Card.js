@@ -29,7 +29,9 @@ export default class card extends Component {
             <img src="img/icons/checked.png" alt="" onClick={this.moreInfo} />
             <h3>{title}</h3>
             <p>{text}</p>
-            <a href={sourceCode} target="_blank">Code source</a>
+            <a href={sourceCode} target="_blank">
+              Code source
+            </a>
           </div>
         )}
       </div>
