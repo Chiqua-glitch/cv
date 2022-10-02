@@ -41,7 +41,7 @@ export const KnowledgeData = {
       experience: 2,
     },
   ],
-  otherKonwledges: [
+  otherKnowledges: [
     {
       type: "Figma",
       experience: 0.5,

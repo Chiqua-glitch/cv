@@ -16,7 +16,7 @@ export default class Resume extends Component {
             </div>
           </header>
           <main>
-            <p>
+            <p className="info">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
               expedita provident voluptates cupiditate rerum assumenda non
               nostrum reiciendis maxime? Neque amet porro cumque distinctio

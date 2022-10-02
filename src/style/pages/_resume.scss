@@ -1,11 +1,14 @@
 .selectAllPage {
-    .resume-page {
-        h2 {
-            margin-bottom: 3rem;
-        }
-        h3 {
-            margin-left: 0;
-            font-size: 2rem;
-        }    
+  .resume-page {
+    h2 {
+      margin: $margin-primary 0;
     }
+    h3 {
+      margin-left: 0;
+      font-size: 2rem;
+    }
+    .info {
+      margin: 0;
+    }
+  }
 }
