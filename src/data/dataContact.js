@@ -1,12 +1,12 @@
 export const infoContactDate = [
   {
-    type: "email",
+    type: "Mail",
     content: "Quentin.cheron26200@hotmail.com",
     iconSrc: "img/icons/mail.png",
   },
-  { type: "phone", content: "06 16 08 53 93", iconSrc: "img/icons/Phone.png" },
+  { type: "Téléphone", content: "06 16 08 53 93", iconSrc: "img/icons/Phone.png" },
   {
-    type: "adress",
+    type: "Adresse",
     content: "5 rue rabelais 26200 Montélimar",
     iconSrc: "img/icons/Adress.png",
   },

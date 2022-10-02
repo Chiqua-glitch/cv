@@ -38,6 +38,7 @@ export default class allCard extends Component {
                     name="check"
                     onChange={this.handlerClick}
                     onClick={this.changeShowAllInput}
+                    checked={!showAll && e.languages == selectedRadio}
                   />
                 </div>
               );
