@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navigation from "../components/Navigation";
 import InfoContact from "../components/InfoContact";
 import Evolution from "../components/resume/Evolution";
+import Langages from "../components/resume/Langages";
 
 export default class Resume extends Component {
   render() {
@@ -28,7 +29,7 @@ export default class Resume extends Component {
             <h2>Mon Évolution</h2>
             <Evolution />
             <h2>Mes compétences</h2>
-            <h3>Langages</h3>
+            {<Langages />}
           </main>
         </div>
       </div>

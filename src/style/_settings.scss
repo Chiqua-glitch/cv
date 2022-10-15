@@ -71,6 +71,16 @@ $margin-primary: 3rem;
   transition: 1s;
 }
 
+@mixin borderKnowledges {
+  content: "";
+  display: inline-block;
+  background-color: $primary-bg;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 3rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -131,7 +141,8 @@ img {
     }
   }
   h1,
-  h2, .resume-page h3 {
+  h2,
+  .resume-page h3 {
     font-size: 2.5rem;
     position: relative;
     width: max-content;

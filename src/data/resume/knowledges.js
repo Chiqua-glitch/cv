@@ -6,15 +6,15 @@ export const KnowledgeData = {
     },
     {
       type: "Css",
-      experience: 3,
+      experience: 1.5,
     },
     {
       type: "Javascript",
-      experience: 3,
+      experience: 2,
     },
     {
       type: "Php",
-      experience: 0.2,
+      experience: .2,
     },
     {
       type: "MySql",
@@ -38,7 +38,7 @@ export const KnowledgeData = {
   cms: [
     {
       type: "Wordpress",
-      experience: 2,
+      experience: 3,
     },
   ],
   otherKnowledges: [
@@ -50,7 +50,9 @@ export const KnowledgeData = {
   academicLanguage: [
     {
       type: "Anglais",
-      experience: 3,
+      experience: 2,
     },
   ],
+  certification: ["Bac", "Brevet"],
+  capacityAcademic: ["Moyen", "Bon", "Très bon", "Excellent"],
 };
