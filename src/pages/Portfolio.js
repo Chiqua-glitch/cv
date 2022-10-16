@@ -4,7 +4,6 @@ import InfoContact from "../components/InfoContact";
 import AllCard from "../components/AllCard";
 
 const Portfolio = () => {
-
   return (
     <div className="selectAllPage">
       <InfoContact />

@@ -109,6 +109,7 @@ header {
     display: none;
   }
   nav {
+    z-index: 1;
     background-color: $primary-bg;
     border-radius: $primary-border-radius 0 0 $primary-border-radius;
     width: 400px;

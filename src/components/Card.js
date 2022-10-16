@@ -3,11 +3,27 @@ import React, { Component } from "react";
 export default class card extends Component {
   state = {
     showInfo: false,
+    top: 0,
+    left: 0,
+    bodyOverflow: true,
+    bodyBackgroundColor: true,
   };
   moreInfo = () => {
     this.setState({ showInfo: !this.state.showInfo });
   };
+  changeStyleBody = () => {
+    this.setState({
+      bodyOverflow: !this.state.bodyOverflow,
+      bodyBackgroundColor: !this.state.bodyBackgroundColor,
+    });
+    console.log(this.state.bodyOverflow);
+  };
+
   render() {
+    document.body.style.overflow = this.state.bodyOverflow
+      ? "visible"
+      : "hidden";
+
     const { title, text, imgSrc, iconSrc, sourceCode } = this.props.item;
     return (
       <div className="card">
@@ -22,11 +38,24 @@ export default class card extends Component {
           src="img/icons/checked.png"
           className="check"
           alt=""
-          onClick={this.moreInfo}
+          onClick={() => {
+            this.moreInfo();
+            this.changeStyleBody();
+          }}
         />
         {this.state.showInfo && (
-          <div className="showInfo">
-            <img src="img/icons/checked.png" alt="" onClick={this.moreInfo} />
+          <div
+            className="showInfo"
+            style={{ top: document.defaultView.pageYOffset + 100 }}
+          >
+            <img
+              src="img/icons/checked.png"
+              alt=""
+              onClick={() => {
+                this.moreInfo();
+                this.changeStyleBody();
+              }}
+            />
             <h3>{title}</h3>
             <p>{text}</p>
             <a href={sourceCode} target="_blank">

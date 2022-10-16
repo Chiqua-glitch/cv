@@ -110,7 +110,7 @@ export default class Langages extends Component {
           <div>
             {academicLanguage.map((item) => {
               return (
-                <div>
+                <div key={item.type}>
                   <h4 key="title">{item.type}</h4>
                   <span
                     className="knowledgesBorder"
@@ -121,7 +121,14 @@ export default class Langages extends Component {
 
                   <ul>
                     {capacityAcademic.map((e) => {
-                      return <li key={e} style={{width: item.experience * 10 + "%"}}>{e}</li>;
+                      return (
+                        <li
+                          key={e}
+                          style={{ width: item.experience * 10 + "%" }}
+                        >
+                          {e}
+                        </li>
+                      );
                     })}
                   </ul>
                 </div>
@@ -134,7 +141,7 @@ export default class Langages extends Component {
           <ul>
             {certification.map((item) => {
               return (
-                <li>
+                <li key={item}>
                   {item}
                   <img src="img/icons/checkbox.png" alt="" />
                 </li>
