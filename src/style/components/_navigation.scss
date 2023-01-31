@@ -98,12 +98,17 @@ span.menu-burger {
 }
 
 header {
+  margin-bottom: 3rem;
   .full-nav {
     z-index: 2;
     display: flex;
     width: 100%;
+    padding-left: 5rem;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    @media screen and (max-width: 960px) {
+      padding: 0;
+    }
   }
   span.menu-burger {
     display: none;
@@ -113,7 +118,7 @@ header {
     background-color: $primary-bg;
     border-radius: $primary-border-radius 0 0 $primary-border-radius;
     width: 400px;
-    height: 75px;
+    height: 85px;
     margin: 0 0 0 auto;
     ul {
       align-items: center;
@@ -140,7 +145,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 960px) {
   header {
     margin: $margin-primary 5rem;
     span.menu-burger {

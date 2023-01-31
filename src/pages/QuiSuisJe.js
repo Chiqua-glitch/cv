@@ -5,7 +5,7 @@ import { dataPassion } from "../data/dataAboutMe";
 
 const QuiSuisJe = () => {
   return (
-    <div className="selectAllPage">
+    <div className="selectAllPage about-me">
       <InfoContact />
       <div id="principal-page">
         <header>

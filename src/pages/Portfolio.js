@@ -19,6 +19,7 @@ const Portfolio = () => {
           {<AllCard />}
         </main>
       </div>
+      <div className="bg"></div>
     </div>
   );
 };

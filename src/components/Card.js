@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useRef, useEffect } from "react";
 
 export default class card extends Component {
   state = {
@@ -7,6 +7,11 @@ export default class card extends Component {
     left: 0,
     bodyOverflow: true,
     bodyBackgroundColor: true,
+    position: true,
+    width: true,
+    height: true,
+    backgroundColor: true,
+    opacity: true,
   };
   moreInfo = () => {
     this.setState({ showInfo: !this.state.showInfo });
@@ -17,6 +22,12 @@ export default class card extends Component {
       bodyBackgroundColor: !this.state.bodyBackgroundColor,
     });
     console.log(this.state.bodyOverflow);
+  };
+
+  changeBgStyle = () => {
+    if (this.state.showInfo) {
+      
+    }
   };
 
   render() {

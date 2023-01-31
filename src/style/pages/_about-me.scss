@@ -1,3 +1,14 @@
+.about-me {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  @media screen and (max-width: 960px) {
+    top: 0;
+    transform: translate(-50%, 0);
+    margin: 3rem 0;
+  }
 
   main {
     .moreInfoAboutMe {
@@ -45,4 +56,4 @@
       }
     }
   }
-
+}
