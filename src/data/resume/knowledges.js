@@ -6,7 +6,7 @@ export const KnowledgeData = {
     },
     {
       type: "Css",
-      experience: 1.5,
+      experience: 3,
     },
     {
       type: "Javascript",
@@ -14,43 +14,39 @@ export const KnowledgeData = {
     },
     {
       type: "Php",
-      experience: .2,
+      experience: .6,
     },
     {
       type: "MySql",
-      experience: 0.2,
+      experience: 0.6,
     },
   ],
   framework: [
     {
       type: "Sass",
-      experience: 2,
+      experience: 1,
     },
     {
       type: "Laravel",
-      experience: 2,
-    },
-    {
-      type: "React",
-      experience: 2,
+      experience: 0,
     },
   ],
   cms: [
     {
       type: "Wordpress",
-      experience: 3,
+      experience: .1,
     },
   ],
   otherKnowledges: [
     {
       type: "Figma",
-      experience: 0.5,
+      experience: .1,
     },
   ],
   academicLanguage: [
     {
       type: "Anglais",
-      experience: 2,
+      experience: 1,
     },
   ],
   certification: ["Bac", "Brevet"],

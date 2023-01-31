@@ -3,7 +3,7 @@ import { KnowledgeData } from "../../data/resume/knowledges";
 
 export default class Langages extends Component {
   state = {
-    years: 5,
+    years: 4,
     knowledgesData: KnowledgeData,
   };
   render() {
@@ -17,11 +17,11 @@ export default class Langages extends Component {
       certification,
     } = this.state.knowledgesData;
     let totalYears = [];
-    for (let i = 1; i < this.state.years + 1; i++) {
+    for (let i = 0; i < this.state.years + 1; i++) {
       totalYears.push(
         <p
           className="years"
-          style={{ width: this.state.years * 5 + "%" }}
+          style={{ width: this.state.years * 5 + "rem" }}
           key={i}
         >
           {i}ans
@@ -42,7 +42,8 @@ export default class Langages extends Component {
                     <span
                       className="knowledgesBorder"
                       style={{
-                        width: item.experience * 17 + "%",
+                        width:
+                          item.experience * this.state.years * 3.355 + "rem",
                       }}
                     ></span>
                   </li>
@@ -60,7 +61,7 @@ export default class Langages extends Component {
                     <span
                       className="knowledgesBorder"
                       style={{
-                        width: item.experience * 17 + "%",
+                        width: item.experience * 3.35 + "rem",
                       }}
                     ></span>
                   </li>
@@ -78,7 +79,7 @@ export default class Langages extends Component {
                     <span
                       className="knowledgesBorder"
                       style={{
-                        width: item.experience * 17 + "%",
+                        width: item.experience * 3.35 + "rem",
                       }}
                     ></span>
                   </li>
@@ -96,7 +97,7 @@ export default class Langages extends Component {
                     <span
                       className="knowledgesBorder"
                       style={{
-                        width: item.experience * 17 + "%",
+                        width: item.experience * 3.35 + "rem",
                       }}
                     ></span>
                   </li>
@@ -115,20 +116,13 @@ export default class Langages extends Component {
                   <span
                     className="knowledgesBorder"
                     style={{
-                      width: item.experience * 20 + "%",
+                      width: item.experience * 3.35 + "rem",
                     }}
                   ></span>
 
                   <ul>
                     {capacityAcademic.map((e) => {
-                      return (
-                        <li
-                          key={e}
-                          style={{ width: item.experience * 10 + "%" }}
-                        >
-                          {e}
-                        </li>
-                      );
+                      return <li key={e}>{e}</li>;
                     })}
                   </ul>
                 </div>
